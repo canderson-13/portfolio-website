@@ -1,0 +1,302 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    background-color: #f5e6e8;
+    color: #192a51;
+}
+
+.grid {
+    display: grid;
+    justify-items: stretch;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 3rem;
+}
+
+nav {
+    background-color: #967aa1;
+    color: #f5e6e8;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    border-bottom: 0.3rem solid #192a51;
+}
+
+nav a:visited {
+    color: #f5e6e8;
+}
+
+header {
+    text-align: center;
+    border-bottom: 0.3rem solid #192a51;
+    border-top: 0.3rem solid #192a51;
+    position: relative;
+    top: 3.2rem;
+}
+
+h1 {
+    font-family: 'Space Mono';
+    font-size: 3rem;
+}
+
+footer {
+    background-color: #967aa1;
+    color: #f5e6e8;
+    text-align: center;
+    position: relative;
+    top: 3.2rem;
+}
+
+section {
+    position:relative;
+    top: 3.2rem;
+}
+
+figure {
+    border: 1px solid #d5c6e0;
+    padding: 0.5rem;
+}
+
+figcaption {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color:#192a51;
+    text-decoration: underline;
+}
+
+#about p {
+    text-align: center;
+    line-height: 2rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+ul#skills {
+    text-align: center;
+    justify-items: left;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul#skills li {
+    display: inline-grid;
+    border: 2px solid #192a51;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+    background-color: #967aa1;
+    color: #f5e6e8;
+    box-shadow: 5px 5px 8px gray;
+}
+
+ul li {
+    line-height: 1.5rem;
+}
+
+.experience div {
+    background-color: #192a51;
+    color: #d5c6e0;
+    max-width: 500px;
+    padding: 2rem;
+    margin: 2rem;
+    border: 2px solid #967aa1;
+    opacity: 0.93;
+    box-shadow: 5px 5px 8px gray;
+}
+
+.experience {
+    display: grid;
+    justify-items: center;
+}
+
+.education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.education div {
+    background-color: #967aa1;
+    color: #f5e6e8;
+    width: 300px;
+    padding: 2rem;
+    margin: 2rem;
+    border: 2px solid #192a51;
+    opacity: 0.93;
+    box-shadow: 5px 5px 8px gray;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects div {
+    background-color: #967aa1;
+    color: #f5e6e8;
+    width: 300px;
+    padding: 2rem;
+    margin: 2rem;
+    border: 2px solid #192a51;
+    opacity: 0.93;
+    box-shadow: 5px 5px 8px gray;
+}
+
+.interests div {
+    background-color: #192a51;
+    color: #f5e6e8;
+    width: 250px;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border: 2px solid #967aa1;
+    opacity: 0.93;
+    box-shadow: 5px 5px 8px gray;
+    border-radius: 20%;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h4 {
+    text-align: center;
+    
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+span {
+    font-family: Georgia;
+    font-weight: 500;
+}
+
+div#about {
+    display: grid;
+    justify-items: center;
+    background-color: #192a51;
+    color: #f5e6e8;
+    padding-top: 1.5rem;
+    align-items: center;
+    grid-gap: 0.5rem;
+    opacity: 0.93;
+}
+
+#contact p {
+    text-align: center;
+    font-family: Georgia;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 1000px) {
+    div#about {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #p1 {
+        grid-column: 1/ span 1;
+    }
+        
+    #p2 {
+        grid-column: 3/ span 1;
+    }
+    
+    figure {
+        grid-column: 2/ span 1;
+    }
+    
+    figcaption {
+        grid-column: 2/ span 1;
+    }
+
+    .experience {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #exp1 {
+        grid-column: 1 / span 1;
+    }
+
+    #exp2 {
+        grid-column: 2 / span 1;
+    }
+
+    #exp3 {
+        grid-column: 3 / span 1;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    div#about {
+        grid-template-columns: 1fr;
+    }
+
+    #p1 {
+        grid-column: 1/ span 1;
+    }
+        
+    #p2 {
+        grid-column: 1/ span 1;
+    }
+    
+    figure {
+        grid-column: 1/ span 1;
+    }
+    
+    figcaption {
+        grid-column: 1/ span 1;
+    }
+
+    .experience {
+        grid-template-columns: 1fr;
+    }
+
+    #exp1 {
+        grid-column: 1 / span 1;
+    }
+
+    #exp2 {
+        grid-column: 1 / span 1;
+    }
+
+    #exp3 {
+        grid-column: 1 / span 1;
+    }
+
+}
+
+
+
+
+
+
